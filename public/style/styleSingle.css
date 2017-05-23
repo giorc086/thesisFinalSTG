@@ -1,0 +1,670 @@
+@charset "UTF-8";
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+#compareBtn{
+font-family: 'Roboto', sans-serif;
+background-color: #FF989D;
+border: none;
+padding: 4px 6px;
+border-radius: 6px;
+font-size: 16px;
+margin-bottom: 10px;
+color: white;
+width:150px;
+height: 30px;
+clear:both;
+text-align: center;
+}
+
+#compareBtn:hover{
+	background-color: gray;
+}
+
+footer {
+	text-align: center;
+	}
+
+footer a{
+	text-decoration: none;
+}
+
+/*Mobile*/
+@media screen and (min-width: 320px) {
+	input {
+		-webkit-appearance: none;
+		-webkit-border-radius: 0px;
+	}
+	#search {
+			width: 200px;
+			height: 30px;
+			background-color: white;
+			border: none;
+			padding: 3px 4px;
+			border-radius: 6px;
+			font-family: 'Roboto', sans-serif;
+			font-size: 14px;
+		}
+
+	#search:focus{
+		outline:none;
+	}
+	nav {
+		padding: 15px 15px 5px;
+		background-color: #F6F8F9;
+	}
+	nav a{
+		text-decoration: none;
+		color: #313131;
+	}
+	#logo {
+		height: 45px;
+		width: auto;
+	}
+	#headerTop p {
+		float: right;
+		font-size: 16px;
+		margin-top:10px;
+		/*padding-top: 5px;*/
+	}
+	#searchBar {
+		float: right;
+		padding: 5px 15px;
+	}
+	#sticky {
+		width: 100%;
+		background-color: white;
+		/*border-bottom: 1px solid #CACACA;
+		box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);*/
+	}
+	#sticky h1 {
+		font-size: 42px;
+		margin: 2px 0px 0px 0px;
+		padding: 0;
+		color: #10416A;
+		font-style: italic;
+		clear: both;
+	}
+
+		h1 a{
+		text-decoration: none;
+		color:#10416A;
+	}
+
+	#sticky h2 {
+		margin: 0px 0px 15px 0px;
+		padding: 0;
+		font-size: 14px;
+		color: gray;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	#sticky {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	#sticky.stick {
+		margin-top: 0 !important;
+		position: fixed;
+		top: 0;
+		z-index: 10000;
+		border-bottom: 1px solid #CACACA;
+		box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+	}
+	header h1 {
+		font-style: italic;
+		color: #10416A;
+	}
+	h3 {
+		font-weight: bold;
+		font-size: 14px;
+		color: #313131;
+		text-transform: uppercase;
+		border-bottom: 1px solid #CACACA;
+	}
+	/*#searchBtn {
+		background-color: #FF989D;
+		border: none;
+		font-size: 10px;
+		padding: 5px 6px;
+		border-radius: 6px;
+		color: white;
+	}*/
+	#searchBtn {
+			background-color: #FF989D;
+			border: none;
+			border-radius: 6px;
+			color: white;
+			background-image: url("../images/search.png");
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 30px;
+			width:30px;
+		}
+
+	ul#ui-id-1 {
+		padding: 10px;
+		width: 130px;
+		background-color: white;
+		border-radius: 6px;
+		list-style-type: none;
+		line-height: 25px;
+	}
+	#search {
+		width: 130px;
+	}
+	#main {
+		width: 95%;
+	}
+	#conditions,
+	#averageQuality,
+	#maps,
+	.clear {
+		clear: both;
+	}
+	#averageQuality, #conditions{
+		padding-top: 50px;
+	}
+
+	div.data {
+		float: left;
+		/*margin: 0px 10% 10% 10%;*/
+		width: 100%;
+		min-height: 150px; 
+		text-align: center;
+	}
+	div.special {
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+#snowhouse{
+	width:100%;
+	margin-bottom: 10%;
+}
+	#leftSnow{
+	width:50%;
+	float: left;
+	text-align: right;
+}
+
+#leftSnow p, #leftSnow h4{
+	text-align: right;
+	padding-right:10%;
+}
+
+#rightSnow{
+	width: 50%;
+	float: left;
+}
+
+/*	div.extraLeft {
+		width: 20%;
+		margin: 0;
+		margin-top:20px;
+		float: left;
+		text-align: center;
+		padding-left: 2%;
+	}
+
+	div.extraRight {
+		width: 20%;
+		margin: 0;
+		margin-top:20px;
+		float: left;
+		text-align: center;
+		padding-right: 2%;
+	}*/
+div.extraLeft {
+		width: 20%;
+		margin: 0;
+		margin-top:20px;
+		float: left;
+		text-align: right;
+		padding-left: 5%;
+	}
+
+	div.extraRight {
+		width: 20%;
+		margin: 0;
+		margin-top:20px;
+		float: left;
+		text-align: left;
+		padding-right: 5%;
+	}
+
+	div.extra{
+		width: 20%;
+		margin: 0;
+		margin-top:20px;
+		float: left;
+		text-align: center;
+	}
+
+	div.middle { 
+	width: 50%; 
+	margin-top: 20px;
+ 	float: left; 
+ 	text-align: center; 
+ }
+
+	div.split {
+		width: 50%;
+		margin: 0;
+		height: 100px;
+		float: left;
+	}
+	div.split2 {
+		width: 50%;
+		height: 100px;
+		float: left;
+	}
+	div.conditions {
+		width: 30%;
+		height: 150px;
+		float: left;
+		text-align: center;
+	}
+	div.manIcon {
+		width: 40%;
+		float: left;
+		text-align: center;
+	}
+	#manIcon{
+		height:78px;
+		width:auto;
+	}
+
+	#houseIcon{
+		height:85px;
+		width:auto;
+		padding-top: 40px;
+	}
+
+	#resortStatistics div.placeholder {
+		width: 100%;
+		height: 20px;
+	}
+	#conditions div.placeholder {
+		width: 100%;
+		height: 50px;
+		background-color: ;
+	}
+
+	#mountain{
+		height:100px;
+		width:auto;
+		float: right; 
+		padding-right: 20px;
+	}
+	#mountainTxt{
+		float: left; 
+		width: 50%; 
+		text-align: left;
+}
+	#pKey {
+		font-size: 11px;
+	}
+	h4 {
+		padding: 0;
+	}
+	div#main {
+		margin-top: 50px;
+		margin-left: 3%;
+	}
+
+	#smileDesk {
+		display:none;
+	}
+	#smileMobile{
+		height: 800px;
+		width: auto;
+		display:block;
+		margin:auto;
+		text-align:center;
+		clear: both;
+	}
+	#smileKey {
+		height: 35px;
+		width: auto;
+		float: left;
+		margin-right: 15px;
+	}
+	/*
+	#resortStatistics div.data h4 {
+		min-height: 50px;
+	}*/
+	#googleMap {
+		height: 300px;
+		width: 100%;
+	}
+	#trailMap {
+		height: 300px;
+		width: 100%;
+	}
+}
+
+/*Tablet*/
+
+@media screen and (min-width: 768px) {
+
+	header .imgContainer {
+		display: block;
+	}
+	header .resortName {
+		margin-left: 0%;
+		margin-right: 0%;
+		float: left;
+	}
+	header .searchBar {
+		display: block;
+		width: 25%;
+		float: right;
+	}
+	#resortStatistics div.data {
+		float: left;
+		margin: 0px 2.5%;
+		width: 15%;
+		/*	min-height: 100px;*/
+		text-align: center;
+	}
+	#resortStatistics div.placeholder {
+		width: 100%;
+		height: 50px;
+		background-color: ;
+	}
+	#conditions div.placeholder {
+		width: 100%;
+		height: 100px;
+		background-color: ;
+	}
+
+div.extraLeft {
+		width: 20%;
+		margin: 0;
+		margin-top:20px;
+		float: left;
+		text-align: right;
+		padding-left: 20%;
+	}
+
+	div.extraRight {
+		width: 20%;
+		margin: 0;
+		margin-top:20px;
+		float: left;
+		text-align: left;
+		padding-right: 20%;
+	}
+
+	div.middle { 
+	width: 20%; 
+	margin-top: 20px;
+ 	float: left; 
+ 	text-align: center; 
+ }
+
+	div.special {
+		width: 50%;
+		float: left;
+		margin-bottom: 10%;
+		
+	}
+
+	#snowHouse{
+		width:100%;
+		float:left;
+		margin-bottom: 5%;
+		margin-top:5%;
+	}
+
+	#smileKey {
+		height: 50px;
+		width: auto;
+		float: left;
+		margin-right: 15px;
+	}
+	/*#searchBtn {
+		background-color: #FF989D;
+		border: none;
+		font-size: 14px;
+		padding: 5px 6px;
+		border-radius: 6px;
+		color: white;
+	}*/
+
+	#sticky {
+		width: 100%;
+		background-color: white;
+		/*border-bottom: ;
+		box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);*/
+	}
+	#sticky h1 {
+		font-size: 60px;
+		margin: 2px 0px 0px 0px;
+		padding: 0;
+		color: #10416A;
+		font-style: italic;
+		clear: both;
+	}
+
+
+	#sticky h2 {
+		margin: 0px 0px 15px 0px;
+		padding: 0;
+		font-size: 20px;
+		color: gray;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	#sticky {
+		margin: 0;
+		padding: 0;
+		/*	border-bottom: 1px solid gray;*/
+	}
+	#sticky.stick {
+		margin-top: 0 !important;
+		position: fixed;
+		top: 0;
+		z-index: 10000;
+	}
+/*	#mountain{
+		height:100px;
+		width:auto;
+		float: right; 
+		padding-right: 50px;
+	}
+	#mountainTxt{
+		float: left; 
+		width: 50%; 
+		text-align: left;
+}*/
+ #conditions{
+		padding-top: 0px;
+	}
+	#averageQuality{
+		padding-top: 15px;
+	}
+}
+
+
+/*Desktop*/
+
+@media screen and (min-width: 1000px) {
+/*	nav {
+		padding: 15px 100px 5px;
+		background-color: #F6F8F9;
+	}*/
+	/*#logo {
+		height: 55px;
+		width: auto;
+	}*/
+
+/*	#compareBtn{
+	clear:both;
+	text-align: center;
+	width:150px;
+	margin-left:auto;
+	margin-right: auto;
+	}*/
+
+	/*#headerTop p {
+		float: right;
+		font-size: .7em;
+		padding-top: 5px;
+	}*/
+	/*#searchBar {
+		float: right;
+		padding: 15px 15px;
+	}*/
+	#sticky {
+		width: 100%;
+		background-color: white;
+		/*border-bottom: 1px solid #CACACA;
+		box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);*/
+	}
+	#sticky h1 {
+		font-size: 60px;
+		margin: 2px 0px 0px 0px;
+		padding: 0;
+		color: #10416A;
+		font-style: italic;
+	}
+	#sticky h2 {
+		margin: 0px 0px 15px 0px;
+		padding: 0;
+		font-size: 20px;
+		color: gray;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	#sticky {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		/*	border-bottom: 1px solid gray;*/
+	}
+	#sticky.stick {
+		margin-top: 0 !important;
+		position: fixed;
+		top: 0;
+		z-index: 10000;
+	}
+	h3 {
+		font-weight: bold;
+		font-size: 16px;
+		color: #313131;
+		text-transform: uppercase;
+		border-bottom: 1px solid #CACACA;
+	}
+	ul#ui-id-1 {
+		padding: 10px;
+		width: 130px;
+		background-color: white;
+		border-radius: 6px;
+		list-style-type: none;
+		line-height: 25px;
+	}
+	#search {
+		width: 150px;
+	}
+	#main {
+		width: 88%;
+	}
+	#conditions,
+	#averageQuality,
+	#maps,
+	.clear {
+		clear: both;
+	}
+	header h1 {
+		font-style: italic;
+		color: #10416A;
+	}
+
+/*	div.data {
+		float: left;
+		margin: 0px 10% 10% 10%;
+		width: 30%;
+		text-align: center;
+	}*/
+
+	/*div.special {
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	} */
+
+	div.split {
+		width: 50%;
+		margin: 0;
+		height: 100px;
+		float: left;
+	}
+	div.split2 {
+		width: 50%;
+		height: 100px;
+		float: left;
+	}
+	div.conditions {
+		width: 30%;
+		height: 150px;
+		float: left;
+		text-align: center;
+	}
+	div.manIcon {
+		width: 40%;
+		float: left;
+		text-align: center;
+	}
+	#resortStatistics div.placeholder {
+		width: 100%;
+		height: 20px;
+		background-color: ;
+	}
+	#conditions div.placeholder {
+		width: 100%;
+		height: 50px;
+		background-color: ;
+	}
+	#pKey {
+		font-size: 12px;
+	}
+	#smileDesk {
+		height: 500px;
+		width: auto;
+		display:block;
+		margin:auto;
+		clear: both;
+	}
+	#smileMobile{
+		display:none;
+	}
+	h4 {
+		padding: 0;
+	}
+	div#main {
+		margin-top: 50px;
+		margin-left: 100px;
+	}
+	
+	#smileKey {
+		height: 50px;
+		width: auto;
+		float: left;
+		margin-right: 15px;
+	}
+	#trailMap,
+	#googleMap {
+		width: 50%;
+		height: 500px;
+	}
+	#maps {
+		width: 100%;
+	}
+}

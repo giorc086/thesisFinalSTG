@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Ski the Globe - Compare</title>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/styleCompare.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="script/scriptCompare.js"></script>
+	 <link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div id="headerTop">
+				<a href="index.html"><img id="logo" src="images/logo.png"></a>
+				<p><a href="about.html">About</a></p>
+				<div id="searchBar">
+					<form id='myForm'>
+						<input id="search" class="tags" placeholder="Search" type="search" name="search"></input>
+						<input id="searchBtn" type="submit" value="    ">
+					</form>
+				</div>
+			</div>
+		</nav>
+		<div id="sticky-anchor"></div>
+		<div id="sticky"></div>
+	</header>
+	<div id="columnLeft">
+		<select id="selectMe">
+			<option value="option0">Select Resort</option>
+			<option value="option1">Arapahoe Basin</option>
+			<option value="option2">Aspen</option>
+			<option value="option3">Beaver Creek</option>
+			<option value="option4">Breckenridge</option>
+			<option value="option5">Cooper</option>
+			<option value="option6">Copper</option>
+			<option value="option7">Crested Butte</option>
+			<option value="option8">Echo</option>
+			<option value="option9">Eldora</option>
+			<option value="option11">Keystone</option>
+			<option value="option12">Loveland</option>
+			<option value="option13">Monarch</option>
+			<option value="option14">Powderhorn</option>
+			<option value="option15">Purgatory</option>
+			<option value="option16">Silverton</option>
+			<option value="option18">Steamboat</option>
+			<option value="option19">Sunlight</option>
+			<option value="option20">Telluride</option>
+			<option value="option21">Vail</option>
+			<option value="option22">Winter Park</option>
+			<option value="option23">Wolf Creek</option>
+		</select>
+		<div id="option1" class="group">Arapahoe Basin
+			<h2>Colorado, USA</h2></div>
+		<div id="option2" class="group">Aspen
+			<h2>Colorado, USA</h2></div>
+		<div id="option3" class="group">Beaver Creek
+			<h2>Colorado, USA</h2></div>
+		<div id="option4" class="group">Breckenridge
+			<h2>Colorado, USA</h2></div>
+		<div id="option5" class="group">Cooper
+			<h2>Colorado, USA</h2></div>
+		<div id="option6" class="group">Copper
+			<h2>Colorado, USA</h2></div>
+		<div id="option7" class="group">Crested Butte
+			<h2>Colorado, USA</h2></div>
+		<div id="option8" class="group">Echo
+			<h2>Colorado, USA</h2></div>
+		<div id="option9" class="group">Eldora
+			<h2>Colorado, USA</h2></div>
+		<div id="option11" class="group">Keystone
+			<h2>Colorado, USA</h2></div>
+		<div id="option12" class="group">Loveland
+			<h2>Colorado, USA</h2></div>
+		<div id="option13" class="group">Monarch
+			<h2>Colorado, USA</h2></div>
+		<div id="option14" class="group">Powderhorn
+			<h2>Colorado, USA</h2></div>
+		<div id="option15" class="group">Purgatory
+			<h2>Colorado, USA</h2></div>
+		<div id="option16" class="group">Silverton
+			<h2>Colorado, USA</h2></div>
+		<div id="option18" class="group">Steamboat
+			<h2>Colorado, USA</h2></div>
+		<div id="option19" class="group">Sunlight
+			<h2>Colorado, USA</h2></div>
+		<div id="option20" class="group">Telluride
+			<h2>Colorado, USA</h2></div>
+		<div id="option21" class="group">Vail
+			<h2>Colorado, USA</h2></div>
+		<div id="option22" class="group">Winter Park
+			<h2>Colorado, USA</h2></div>
+		<div id="option23" class="group">Wolf Creek
+			<h2>Colorado, USA</h2></div>
+		<!-- <h1>Resort Stats</h1> -->
+		<div id="box"></div>
+	</div>
+	<div id="columnRight">
+		<select id="selectMe2">
+			<option value="option47">Select Resort</option>
+			<option value="option24">Arapahoe Basin</option>
+			<option value="option25">Aspen</option>
+			<option value="option26">Beaver Creek</option>
+			<option value="option27">Breckenridge</option>
+			<option value="option28">Cooper</option>
+			<option value="option29">Copper</option>
+			<option value="option30">Crested Butte</option>
+			<option value="option31">Echo</option>
+			<option value="option32">Eldora</option>
+			<option value="option34">Keystone</option>
+			<option value="option35">Loveland</option>
+			<option value="option36">Monarch</option>
+			<option value="option37">Powderhorn</option>
+			<option value="option38">Purgatory</option>
+			<option value="option39">Silverton</option>
+			<option value="option41">Steamboat</option>
+			<option value="option42">Sunlight</option>
+			<option value="option43">Telluride</option>
+			<option value="option44">Vail</option>
+			<option value="option45">Winter Park</option>
+			<option value="option46">Wolf Creek</option>
+		</select>
+		<div id="option24" class="group2">Arapahoe Basin
+			<h2>Colorado, USA</h2></div>
+		<div id="option25" class="group2">Aspen
+			<h2>Colorado, USA</h2></div>
+		<div id="option26" class="group2">Beaver Creek
+			<h2>Colorado, USA</h2></div>
+		<div id="option27" class="group2">Breckenridge
+			<h2>Colorado, USA</h2></div>
+		<div id="option28" class="group2">Cooper
+			<h2>Colorado, USA</h2></div>
+		<div id="option29" class="group2">Copper
+			<h2>Colorado, USA</h2></div>
+		<div id="option30" class="group2">Crested Butte
+			<h2>Colorado, USA</h2></div>
+		<div id="option31" class="group2">Echo
+			<h2>Colorado, USA</h2></div>
+		<div id="option32" class="group2">Eldora
+			<h2>Colorado, USA</h2></div>
+		<div id="option34" class="group2">Keystone
+			<h2>Colorado, USA</h2></div>
+		<div id="option35" class="group2">Loveland
+			<h2>Colorado, USA</h2></div>
+		<div id="option36" class="group2">Monarch
+			<h2>Colorado, USA</h2></div>
+		<div id="option37" class="group2">Powderhorn
+			<h2>Colorado, USA</h2></div>
+		<div id="option38" class="group2">Purgatory
+			<h2>Colorado, USA</h2></div>
+		<div id="option39" class="group2">Silverton
+			<h2>Colorado, USA</h2></div>
+		<div id="option41" class="group2">Steamboat
+			<h2>Colorado, USA</h2></div>
+		<div id="option42" class="group2">Sunlight
+			<h2>Colorado, USA</h2></div>
+		<div id="option43" class="group2">Telluride
+			<h2>Colorado, USA</h2></div>
+		<div id="option44" class="group2">Vail
+			<h2>Colorado, USA</h2></div>
+		<div id="option45" class="group2">Winter Park
+			<h2>Colorado, USA</h2></div>
+		<div id="option46" class="group2">Wolf Creek
+			<h2>Colorado, USA</h2></div>
+		<div id="box2"></div>
+	</div>
+</body>
+
+</html>

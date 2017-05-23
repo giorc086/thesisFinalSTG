@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ski The Globe - Home</title>
+    <link rel="stylesheet" type="text/css" href="style/styleIndex.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,900,900i" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> <link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+    <div id="background">
+        <nav>
+            <img id='logo' src=images/logo.png>
+            <a href="about.html">About</a>
+        </nav>
+        <div class="headings">
+            <h1>Find the best skiing resorts in Colorado.</h1>
+            <form id="myForm">
+                <input id="search" class="tags" placeholder="Search for resorts" type="search" name="search"></input>
+                <input id="searchBtn" type="submit" value="   ">
+            </form>
+            <!-- <p id='smallP'>Please note that this is in beta and </br>only contains resorts in Colorado.</p> -->
+            <h3>Discover resorts on the map</h3>
+            <a href="#map">
+            <img id='arrowIcon' src="images/arrowIcon.png">
+            </a>
+        </div>
+    </div>
+    <!-- MAP -->
+    <div id="map_wrapper">
+    <a name="map"></a>
+        <div id="map_canvas" class="mapping"></div>
+    </div>
+    <script type="text/javascript" src="script/scriptIndex.js"></script>
+     <footer>
+      <p>&copy; 2017 <a href="https://www.ceciliagiorcelli.com"> Cecilia Giorcelli.</a></p>
+    </footer>
+</body>
+
+</html>

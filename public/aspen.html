@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Aspen</title>
+  <link href="style/styleSingle.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div id="headerTop">
+        <a href="index.html"><img id="logo" src="images/logo.png"></a>
+        <p><a href="about.html">About</a></p>
+        <div id="searchBar">
+          <form id='myForm'>
+            <input id="search" class="tags" placeholder="Search" type="search" name="search"></input>
+            <input id="searchBtn" type="submit" value="    ">
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div id="sticky-anchor"></div>
+    <div id="sticky">
+      <h1>Aspen</h1>
+      <h2>Colorado, USA</h2>
+      <a href="compare.html">
+        <button id="compareBtn">Compare Resorts</button>
+      </a>
+    </div>
+  </header>
+  <div id="main">
+    <div id="resortStatistics">
+      <h3><i>Resort Statistics</i></h3>
+      <div class="data">
+        <h4>Open Runs</h4>
+        <p>98/126</p>
+        <div class="placeholder">
+          <svg height="10px" width="100px">
+            <rect height="10px" width="100px" style="fill: #CFCFCF" />
+            <rect height="10px" width="70%" style="fill: #10416A" />
+          </svg>
+        </div>
+      </div>
+      <div class="data">
+        <h4>Open Lifts</h4>
+        <p id='lifts'>10/12</p>
+        <div class="placeholder">
+          <svg height="10px" width="100px">
+            <rect height="10px" width="100px" style="fill: #CFCFCF" />
+            <rect height="10px" width="70%" style="fill: #10416A" />
+          </svg>
+        </div>
+      </div>
+      <div class="data">
+        <h4>Longest Run</h4>
+        <p id='longestRun'>3.5 mi</p>
+        <div class="placeholder">
+          <svg height="10px" width="100px">
+            <rect height="10px" width="100px" style="fill: #CFCFCF" />
+            <rect height="10px" width="70%" style="fill: #10416A" />
+          </svg>
+        </div>
+      </div>
+      <div class="data">
+        <h4>Ticket Prices</h4>
+        <p>$$$</p>
+        <div class="placeholder"></div>
+      </div>
+      <div class="data">
+        <h4>Skiable Acres</h4>
+        <p>5,517</p>
+        <div class="placeholder"></div>
+      </div>
+      <div class="special clear">
+        <h4>Run Levels</h4><img src="images/pieChart.png" height="100px" width="auto"></div>
+      <div class="special">
+        <h4>Elevation</h4>
+        <div style="width: 50%; float: left;">
+          <img id='mountain' src="images/mountainIcon.png">
+        </div>
+        <div id='mountainTxt'>
+          <p>Top&nbsp;13,340 ft</p>
+          <p style="">Difference&nbsp;3,340 ft</p>
+          <p style="">Base&nbsp;9,340 ft</p>
+        </div>
+      </div>
+      <div id="conditions">
+        <h3><i>Conditions</i></h3>
+        <div class="extraLeft">
+          <h4>Snow Depth <br />Mountain Top</h4>
+          <p id='surfaceTop'>58 in</p>
+        </div>
+        <div class="middle">
+          <!-- Insert SVG and make sure everything floats side by side -->
+          <svg height="100px" width="10px" style="margin-right:40px">
+            <rect height="100px" width="10px" style="fill: #10416A" />
+            <rect height="42%" width="10px" style="fill: white" />
+          </svg>
+          <img id="manIcon" src="images/manIcon.png">
+          <!-- Insert SVG -->
+          <svg height="100px" width="10px">
+            <rect height="100px" width="10px" style="fill: #10416A" />
+            <rect height="57%" width="10px" style="fill: white" />
+          </svg>
+        </div>
+        <div class="extraRight">
+          <h4>Snow Depth <br />Mountain Bottom</h4>
+          <p id='surfaceBottom'>43 in</p>
+        </div>
+        <div id="snowHouse">
+        <div id="leftSnow">
+          <h4>Average Snow Fall <br />Per Year</h4>
+          <p>178 inches</p>
+          </div>
+          <!-- <div class="placeholder"> -->
+          <div id="rightSnow">
+            <svg height="100px" width="10px">
+              <rect height="100px" width="10px" style="fill: #10416A" />
+            </svg>
+            <img id="houseIcon" src="images/houseIcon.png">
+          </div>
+        </div>
+        <div id="averageQuality">
+          <h3>Average Skiing Day Quality Per Month</h3>
+          <div><img id="smileKey" src="images/smileKey.png">
+            <p id="pKey">The weather conditions used to categroize the quality of a day are: wind, temperature, snow pack and visibility.</p>
+          </div>
+          <div style="text-align: center;">
+            <img src="images/smileImgDesk.png" id="smileDesk"></div>
+          <img src="images/smileImg.png" id="smileMobile"></div>
+      </div>
+      <div id="maps">
+        <h3>Maps</h3>
+      </div>
+      <div id="maps">
+        <iframe id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49471.22968806233!2d-106.87182995744169!3d39.198542699135736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8740397cf7413c7d%3A0xc12b42dc782cf672!2sAspen%2C+CO+81611!5e0!3m2!1sen!2sus!4v1491752595216&t=p" frameborder="0" style="border:0; float: left;" allowfullscreen></iframe>
+        <img id="trailMap" src="https://www.aspensnowmass.com/~/media/aspensnowmass/trail-maps/2015_snowmass_winter_high.ashx">
+      </div>
+    </div>
+    </div>
+    <footer>
+      <p>&copy; 2017 <a href="https://www.ceciliagiorcelli.com"> Cecilia Giorcelli.</a></p>
+    </footer>
+    <script type="text/javascript" src="script/scriptSingle.js"></script>
+</body>
+
+</html>

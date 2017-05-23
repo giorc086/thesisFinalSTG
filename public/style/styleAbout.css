@@ -1,0 +1,410 @@
+@charset "UTF-8";
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+#compareBtn{
+font-family: 'Roboto', sans-serif;
+background-color: #FF989D;
+border: none;
+padding: 4px 6px;
+border-radius: 6px;
+font-size: 16px;
+margin-bottom: 10px;
+color: white;
+width:150px;
+height: 30px;
+clear:both;
+text-align: center;
+}
+
+#compareBtn:hover{
+	background-color: gray;
+}
+.ui-helper-hidden-accessible {
+		display: none;
+	}
+
+footer {
+	text-align: center;
+}
+
+/*Mobile*/
+@media screen and (min-width: 320px) {
+	
+	input {
+		-webkit-appearance: none;
+		-webkit-border-radius: 0px;
+	}
+
+	#h1{
+		font-size: 60px;
+		margin: 2px 0px 0px 0px;
+		padding: 0;
+		color: #10416A;
+		font-style: italic;
+		clear: both;
+		text-align: center;
+	}
+
+	h4{
+		margin-left: 5%;
+		margin-bottom: 8px;
+		font-size: 18px;
+	}
+	.p{
+		margin-top:0px;
+		margin-right:5%;
+		margin-left: 5%;
+		line-height: 20px;
+		font-size: 16px;
+		color: #3d3d3d;
+	}
+	iframe{
+	width: 90%;
+	height: auto;
+	margin-left: 5%;
+	margin-right: auto;
+}
+#video{
+padding-bottom: 50px;
+}
+
+#flowChart{
+	margin-left:3%;
+	width:97%;
+	height:auto;
+}
+	#search {
+			width: 200px;
+			height: 30px;
+			background-color: white;
+			border: none;
+			padding: 3px 4px;
+			border-radius: 6px;
+			font-family: 'Roboto', sans-serif;
+			font-size: 14px;
+		}
+
+	#search:focus{
+		outline:none;
+	}
+	nav {
+		padding: 15px 15px 5px;
+		background-color: #F6F8F9;
+	}
+	nav a{
+		text-decoration: none;
+		color: #313131;
+	}
+	#logo {
+		height: 45px;
+		width: auto;
+	}
+	#headerTop p {
+		float: right;
+		font-size: 16px;
+		margin-top:10px;
+		/*padding-top: 5px;*/
+	}
+	#searchBar {
+		float: right;
+		padding: 5px 15px;
+	}
+	#sticky {
+		width: 100%;
+		background-color: white;
+		/*border-bottom: 1px solid #CACACA;
+		box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);*/
+	}
+	#sticky h1 {
+		font-size: 42px;
+		margin: 2px 0px 0px 0px;
+		padding: 0;
+		color: #10416A;
+		font-style: italic;
+		clear: both;
+	}
+
+		h1 a{
+		text-decoration: none;
+		color:#10416A;
+	}
+
+	#sticky h2 {
+		margin: 0px 0px 15px 0px;
+		padding: 0;
+		font-size: 14px;
+		color: gray;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	#sticky {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	#sticky.stick {
+		margin-top: 0 !important;
+		position: fixed;
+		top: 0;
+		z-index: 10000;
+		border-bottom: 1px solid #CACACA;
+		box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+	}
+	header h1 {
+		font-style: italic;
+		color: #10416A;
+	}
+	h3 {
+		font-weight: bold;
+		font-size: 14px;
+		color: #313131;
+		text-transform: uppercase;
+		border-bottom: 1px solid #CACACA;
+	}
+
+	#searchBtn {
+			background-color: #FF989D;
+			border: none;
+			border-radius: 6px;
+			color: white;
+			background-image: url("../images/search.png");
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 30px;
+			width:30px;
+		}
+
+	ul#ui-id-1 {
+		padding: 10px;
+		width: 130px;
+		background-color: white;
+		border-radius: 6px;
+		list-style-type: none;
+		line-height: 25px;
+	}
+	#search {
+		width: 130px;
+	}
+	
+
+	h4 {
+		padding: 0;
+	}
+	div#main {
+		margin-top: 50px;
+		margin-left: 3%;
+	}
+
+}
+
+/*Tablet*/
+
+@media screen and (min-width: 768px) {
+	h4{
+		margin-left: 5%;
+		margin-bottom: 8px;
+		font-size: 18px;
+	}
+	.p{
+		margin-top:0px;
+		margin-right:5%;
+		margin-left: 5%;
+		line-height: 20px;
+		font-size: 16px;
+		color: #3d3d3d;
+	}
+
+	#video{
+	margin-left: 5%;
+	margin-right: auto;
+	padding-bottom: 100px;
+	   
+}
+iframe{
+	width:640px;
+	height:480px;
+}
+	header .imgContainer {
+		display: block;
+	}
+	header .resortName {
+		margin-left: 0%;
+		margin-right: 0%;
+		float: left;
+	}
+	header .searchBar {
+		display: block;
+		width: 25%;
+		float: right;
+	}
+	
+
+	#snowHouse{
+		width:100%;
+		float:left;
+		margin-bottom: 5%;
+		margin-top:5%;
+	}
+
+	#smileKey {
+		height: 50px;
+		width: auto;
+		float: left;
+		margin-right: 15px;
+	}
+	/*#searchBtn {
+		background-color: #FF989D;
+		border: none;
+		font-size: 14px;
+		padding: 5px 6px;
+		border-radius: 6px;
+		color: white;
+	}*/
+
+	#sticky {
+		width: 100%;
+		background-color: white;
+		/*border-bottom: ;
+		box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);*/
+	}
+	#sticky h1 {
+		font-size: 60px;
+		margin: 2px 0px 0px 0px;
+		padding: 0;
+		color: #10416A;
+		font-style: italic;
+		clear: both;
+	}
+
+
+	#sticky h2 {
+		margin: 0px 0px 15px 0px;
+		padding: 0;
+		font-size: 20px;
+		color: gray;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	#sticky {
+		margin: 0;
+		padding: 0;
+		/*	border-bottom: 1px solid gray;*/
+	}
+	#sticky.stick {
+		margin-top: 0 !important;
+		position: fixed;
+		top: 0;
+		z-index: 10000;
+	}
+}
+
+
+/*Desktop*/
+@media screen and (min-width: 1000px) {
+	#h1{
+		font-size: 60px;
+		margin: 2px 0px 0px 0px;
+		padding: 0;
+		color: #10416A;
+		font-style: italic;
+		clear: both;
+		text-align: center;
+	}
+
+	h4{
+		margin-left: 25%;
+		margin-bottom: 8px;
+		font-size: 20px;
+	}
+	.p{
+		margin-top:0px;
+		margin-right:25%;
+		margin-left: 25%;
+		line-height: 28px;
+		font-size: 20px;
+		color: #3d3d3d;
+	}
+	#video{
+	margin-left: 21%;
+	margin-right: auto;
+	   
+}
+iframe{
+	 width: 832px;
+    height: 469px;
+}
+
+#flowChart{
+	margin-left:25%;
+	width:45%;
+	height:auto;
+}
+/*	#video{
+		margin-left: 25%;
+		margin-right: auto;
+	}
+	iframe{
+		width:800px;
+		height: auto;
+	}*/
+	#sticky {
+		width: 100%;
+		background-color: white;
+	}
+	#sticky h1 {
+		font-size: 60px;
+		margin: 2px 0px 0px 0px;
+		padding: 0;
+		color: #10416A;
+		font-style: italic;
+	}
+	#sticky h2 {
+		margin: 0px 0px 15px 0px;
+		padding: 0;
+		font-size: 20px;
+		color: gray;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	#sticky {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	#sticky.stick {
+		margin-top: 0 !important;
+		position: fixed;
+		top: 0;
+		z-index: 10000;
+	}
+	h3 {
+		font-weight: bold;
+		font-size: 16px;
+		color: #313131;
+		text-transform: uppercase;
+		border-bottom: 1px solid #CACACA;
+	}
+	ul#ui-id-1 {
+		padding: 10px;
+		width: 130px;
+		background-color: white;
+		border-radius: 6px;
+		list-style-type: none;
+		line-height: 25px;
+	}
+	#search {
+		width: 150px;
+	}
+	header h1 {
+		font-style: italic;
+		color: #10416A;
+	}
+
+
+
+}
